@@ -30,7 +30,7 @@ app.post('/api/chat', async (req, res) => {
   } catch (error) {
     console.error(error);
     if (error.code === 'insufficient_quota') {
-      return res.status(500).json({ error: 'Quota exceeded. Tarkista OpenAI-suunnitelmasi ja laskutustietosi.' });
+      return res.status(500).json({ error: 'Quota exceeded. Saldo ylittynyt.' });
     }
     res.status(500).json({ error: 'Something went wrong' });
   }
