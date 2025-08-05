@@ -1,0 +1,33 @@
+Asennus ja käynnistys
+
+Kloonaa repositorio:
+
+git clone <repository_url>
+cd opetuskumppani-app
+
+Asenna riippuvuudet:
+
+npm install
+
+Kopioi .env.example → .env ja lisää OPENAI_API_KEY:
+
+cp .env.example .env
+# muokkaa .env, lisää oma avain
+Oman avaimen voi luoda täällä:
+https://platform.openai.com/settings/organization/api-keys
+
+
+
+Tuotantotilassa:
+
+npm start
+
+Avaa sovellus selaimessa osoitteessa:
+
+http://localhost:3000
+
+Käyttö
+
+Kirjoita oppilaan kommentti tekstikenttään ja paina Lähetä.
+
+Näet AI:n ehdottamat jatkokysymykset ja ohjaukset chat-ikkunassa.

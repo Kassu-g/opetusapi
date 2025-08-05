@@ -1,0 +1,15 @@
+{
+  "name": "opetuskumppani-app",
+  "version": "1.0.0",
+  "description": "Opetuskumppani app vetisen kiertokulun ohjaavaan oppimiseen",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-deprecation server.js",
+    "dev": "nodemon --node-arg=--no-deprecation server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "openai": "^4.4.0",
+    "dotenv": "^16.0.3"
+  }
+}
